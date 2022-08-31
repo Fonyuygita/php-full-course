@@ -1,0 +1,83 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #323232;
+
+}
+
+.container{
+	margin-top: 120px;
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	
+
+	
+
+}
+.container  h1{
+	text-align: center;
+	color: #ffff;
+	margin-top:12px;
+
+
+	
+	
+}
+ .container h2{
+	color: white;
+	color: white;
+	display: flex;
+	font-size: 30px;
+	text-align: center;
+}
+
+.container h2  a{
+	color: white;
+	 text-decoration: none;
+cursor: pointer;
+background-color: orange;
+text-align: center;
+color: black;
+}
+.container .myform{
+	padding: 12px;
+	display: block;
+	margin: 12px 2px 2px 12px;
+	height: 450px;
+	box-shadow: 1px 1px 12px black;
+
+}
+.container input{
+	width: 436px;
+	
+	padding: 22px;
+	margin:12px 3px 3px 15px;
+	background: transparent;
+}
+.container input[type=text], input[type=password]{
+	border-left: none;
+	border-bottom-color:#fff;
+	height: 23px;
+	color: #ffff;
+	outline: none;
+	border-top: none;
+	border-right: none;
+	line-height:all;
+font-size: 22px;
+}
+.container input[type=submit]{
+	text-align: center;
+	background: orange;
+	margin-left: 27px;
+	margin-top: 45px;
+}
+@media(max-width: 360px){
+	.container input{
+	width: 219px;
+	
+	padding: 22px;
+	margin:12px 3px 3px 15px;
+	background: red;
+}
+}
