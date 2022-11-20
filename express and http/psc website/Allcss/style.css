@@ -1,0 +1,743 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: 0;
+ font-family: sans-serif;
+ 
+}
+
+/* now let us make use of css variable */
+:root {
+  --color-primary: #6c63ff;
+  --color-success: #00bf8e;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-variant: rgba(247, 88, 66, 0.4);
+  --color-white: #ffff;
+  --color-light: rgba(255, 255, 255, 0.7);
+  --color-black: #000;
+  --color-bg: #1f2641;
+  --color-bg1: #2e3267;
+  --color-bg2: #424890;
+
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+  --transition: all 400ms ease;
+}
+
+/* end of css variables */
+
+/* we are going to continue with the basic styling */
+
+/* go grab fonts from google fonts */
+body {
+  line-height: 1.7;
+  color: var(--color-white);
+  background: var(--color-bg);
+}
+
+/* our container is going to try to centralise everthing inside of it */
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto; /*going to  push it in the middle on large devices*/
+}
+/* for any section wwe are going to create, it should have the following styling */
+section {
+  padding: 6rem 0; /*1rem=16px*/
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+/* now let us stle all our header */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4.mainhead {
+  margin-top: 23px;
+}
+h4 {
+  font-size: 1.6rem;
+
+  top: 3rem;
+}
+
+a {
+  color: var(--color-white);
+}
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.btn {
+  display: inline-block;
+  background-color: var(--color-danger);
+  color: var(--color-white);
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  font-weight: 500; /*which is transparent*/
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background: var(color-danger);
+  color: var(--color-white);
+}
+
+
+.btn-tertiary {
+  background: #1f2641;
+  color: var(--color-white);
+  border: 1px solid #fff;
+}
+/* end of basic styling */
+
+/* next we style our navbar */
+
+nav {
+  background: transparent;
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 11; /*so that it is always untop of everything on the page*/
+}
+
+.nav_container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+/* on large devices we do not need our btns */
+nav button {
+  
+    font-size: 3rem;
+    display: none;
+ 
+  
+}
+.nav_menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.nav_menu a {
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+.nav_menu a:hover {
+  color: var(--color-bg2);
+}
+
+/* end of navbar styling */
+ 
+.header-left{
+    font-size: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+    color: white;
+}
+.header-left h1{
+   color: white;
+}
+
+.header-left span#first-name{
+  color: yellow;
+}
+
+.header-left .btn{
+    margin-top: 1.5rem;
+   margin: 0 auto; 
+   
+} 
+header{
+    position: relative;
+    top: 5rem;
+    overflow: hidden;
+    height: 78vh;
+    margin-bottom: 5rem;
+
+}
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 8rem;
+    height: 100%;
+    margin-top: 3rem;
+    
+    
+}
+.header-right img{
+
+  margin-top: 5rem; 
+  margin-right: 0;
+  
+  
+
+}
+
+.size img{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 4px solid yellow;
+}
+.size img:hover{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 4px solid yellow;
+  background-color: rgba(68, 61, 61, 0.2);
+  cursor: pointer;
+}
+.header-left p {
+    
+    font-size: 1.7rem;
+    line-height: 2.1rem;
+   
+    
+}
+
+.header-left .btn {
+    margin-top: 4rem;
+
+   margin: 0 auto;
+
+    
+}
+.header-left h1{
+text-align: center;
+margin-bottom: 3rem;
+font-size: 3rem;
+color: #fff;
+}
+.header-right-img{
+stroke: aliceblue;
+height: fit-content;
+width: 400px;
+margin-left: 4rem;
+
+}
+
+/* our categories section */
+.category-section{
+  background-color: var(--color-bg1);
+}
+
+.category-section h1{
+  line-height: 1;
+  margin-bottom: 3rem;
+
+}
+.category-left{
+  margin-right: 4rem;
+}
+
+.category-container{
+  display: grid;
+  grid-template-columns: 38% 62%;
+  gap: 5rem;
+}
+.category-left p{
+margin: 1rem 0 3rem;
+}
+.category-right{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+
+}
+
+.catergory{
+  background: var(--color-bg2);
+  padding: 2rem;
+  border-radius: 2rem;
+  transition: var(--transition);
+  
+
+}
+.catergory:hover{
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.catergory-icon {
+  color: var(--color-white);
+  padding: 1.7rem;
+  border-radius: 0.9rem;
+background: var(--color-bg);
+text-align: center;
+align-items: center;
+margin-left: 2.5rem;
+}
+.catergory h1{
+  margin: 3rem 0 1rem;
+  text-align: center;
+}
+.catergory p{
+  font-size: 0.8rem;
+}
+.catergory:nth-child(2) .catergory-icon{
+  background-color: var(--color-danger);
+}
+
+
+.catergory:nth-child(3) .catergory-icon{
+  background-color: var(--color-primary);
+}
+
+
+.catergory:nth-child(4) .catergory-icon{
+  background-color: var(--color-warning);
+}
+
+
+.catergory:nth-child(5) .catergory-icon{
+  background-color: var(--color-success);
+}
+/* end of categories section */
+
+/* change th nav color when scrolling */
+
+
+.window-scroll{
+  background-color: var(--color-primary);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+/* end of scroll */
+
+/* style our courses section */
+.course{
+  margin-top: 5rem;
+
+}
+.courses-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.course{
+  background-color: var(--color-bg1);
+  text-align: center;
+  border: 1px solid transparent;
+}
+.course:hover{
+  background: transparent;
+  border-color: var(--color-primary);
+}
+.info{
+  padding: 2rem;
+}
+.info p{
+  margin: 1.2rem 0 2rem;
+  font-size: 0.9rem;
+}
+.courses h2{
+  text-align: center;
+}
+.courses h3{
+  margin-top: 3rem;
+  text-align: center;
+}
+/* **************end of courses section */
+/* ***************faqs section */
+
+.faqs{
+  margin-top: 3rem;
+  background-color: var(--color-bg1);
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+.faqs-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.faq{
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  gap: 1.5rem;
+  background-color: var(--color-primary);
+  cursor: pointer;
+  height: fit-content;
+}
+.faq h4{
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.faq p{
+  display: none;
+}
+.faq.open p{
+  display: block;
+}
+
+/*end of ***************faqs section */
+
+/* style our tetimonial */
+
+.testimonial-container{
+  overflow-x: hidden;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.testimonial{
+  padding-top: 2rem;
+}
+.avatar{
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 0.5rem solid var(--color-bg1);
+}
+.test-info{
+  text-align: center;
+}
+.testimonial-body{
+  background:var(--color-primary);
+  padding: 2rem;
+  margin: 3rem 0 2rem;
+  text-align: center;
+  position: relative;
+}
+.testimonial-body::before{
+
+  content: "";
+  display: block;
+  background:linear-gradient(
+    135deg, transparent,var(--color-primary), var(--color-primary), var(--color-primary)
+  );
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 50%;
+  top: -1.5rem;/*half the height*/
+  border-radius: 50%;
+}
+.swip{
+  margin-top: 3rem;
+}
+/* end of our testimonial */
+/* footer */
+
+/* end of footer */
+
+footer{
+  background:var(--color-bg1) ;
+  padding: 5rem;
+  font-size: 1.5rem;
+}
+ 
+.footer-container{
+  display: grid;
+  grid-template-columns: 30% 20% 20% 20%;
+  gap: 5rem;
+}
+.footer-container > div h4{
+  margin-bottom: 1.2rem;
+
+}
+.footer-1 p{
+  margin: 0 0 2rem;
+}
+
+footer ul li{
+  margin-bottom: 0.7rem;
+}
+footer ul li a:hover{
+  text-decoration: underline;
+  background: var(--color-success);
+}
+.footer-socials{
+  display: flex;
+  gap: 1rem;
+  font-size: 3.2rem;
+  margin-top: 2rem;
+}
+.footer-copyright{
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1.2rem;
+}
+
+
+/* *****************Media   Queries {tablet first} */
+
+@media screen and (max-width: 1024px){
+  .container{
+    width: var(--container-width-md);
+    
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 1.7rem;
+  }
+  .header-container{
+    background-image: none;
+  }
+  h3{
+    font-size: 1.4rem;
+  }
+  h4{
+    font-size: 1.2rem;
+  }
+
+  /* nav bar******************* */
+nav button{
+  display: inline-block;
+  background: transparent;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+nav .close-menu-btn{
+  display: none;
+}
+.nav_menu{
+  position: fixed;
+  top: 5rem;
+  right: 5%;
+  display: none;
+ 
+  height: fit-content;
+  width:18rem;
+  flex-direction: column;/*since it is already dispplayed flex*/
+gap: 0;
+}
+  .nav_menu li{
+    width: 100%;
+    height: 5rem;
+    animation: navItems 400ms linear forwards;
+
+
+  }
+
+  /* we want our animation to animate one by one */
+
+  .nav_menu li:nth-child(2){
+    animation-delay: 500ms;
+  }
+
+  
+  .nav_menu li:nth-child(3){
+    animation-delay: 700ms;
+  }
+
+  
+  .nav_menu li:nth-child(4){
+    animation-delay: 900ms;
+  }
+  .nav_menu li a{
+    background: var(--color-primary);
+    box-sizing: -4rem 10rem rgba(0,0,0 0.6);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+
+
+  }
+  .nav_menu li a:hover{
+    background: var(--color-bg2);
+    color: var(--color-white);
+  }
+
+  /* now let us animate or navmenu******************* */
+  @keyframes navItems{
+
+from{
+/* we want each nav item to spin from the top rigt
+so we are going to use translation here */
+transform: rotateZ(-90deg);
+opacity: 0;
+
+
+}
+
+
+
+to{
+  transform:rotateZ(0);
+  opacity: 1;
+}
+
+  }
+
+  /* ***********header section on tablet********** */
+  header{
+    height: 52vh;
+ 
+  }
+  .header-container{
+    gap: 0;
+    padding-bottom: 4rem;
+    padding-top: 0rem;
+  }
+  .header-left {
+    font-size: 1rem;
+    align-items: center;
+    gap: 0;
+    text-align: center;
+    margin-bottom: 7rem;
+    line-height: .7;
+    margin-top: 0;
+  }
+  .header-right{
+    display: none;
+  }
+  .header-left p{
+    font-size: 1rem;
+  }
+  .header-left h1{
+    color: white;
+    font-size: 1.4rem;
+  }
+
+  /* ************Categfory section */
+.catergory{
+  height: fit-content;
+}
+
+.category-container{
+  display: grid;
+  grid-template-columns: 100%; 
+}
+.category-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.category-right{
+  
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+ .catergory{
+  height: 21rem;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+ }
+
+ .category-right p{
+   font-size: 1.1rem;
+   text-align: center;
+ }
+  .catergory-icon{
+   align-items: center;
+   justify-content: center;
+   font-size: 2rem;
+   text-align: center;
+   margin-left: 11rem;
+ }
+ 
+
+
+
+/* *******Popular Courses Section******** */
+
+.course{
+  height: auto;
+  margin-top: 0;
+}
+.courses-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+/* *****************footer section */
+
+.footer-container{
+  grid-template-columns: 1fr 1fr;
+}
+.category-right{
+  grid-template-columns: 1fr;
+}
+
+}
+
+
+
+
+/* NOW THE MOBILE MEDIA  QUERY*/
+@media screen and (max-width:600px){
+  header{
+    height: 100vh;
+  }
+  .header-container{
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+
+  .dynamic-text{
+    font-size: 1rem;
+    color: blue;
+  }
+   .faq{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+   
+    width: 100%;
+  }
+  .footer-container{
+    grid-template-columns: 1fr;
+  }
+  .footer-1{
+    margin: 1rem auto;
+  }
+
+
+  .footer-socials{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

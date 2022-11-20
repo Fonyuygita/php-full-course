@@ -1,0 +1,127 @@
+.contact{
+  
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+.contact-container{
+    background: var(--color-bg2);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 50rem;
+    
+    background-repeat: no repeat;
+    background-size: cover;
+    image-orientation: from-image;
+
+
+}
+.contact-info{
+    background: var(--color-primary);
+    display: grid;
+    grid-template-columns:repeat(1, 1fr) ;
+margin-bottom: 2rem;
+margin-top: 0;
+    padding: 2rem;
+    border-radius: 4rem;
+    text-align: center;
+    
+
+}
+
+.contact-details{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 2rem;
+    color: white;
+
+
+}
+.contact-detail h5{
+    
+   font-size: 1rem;
+}
+.contact-img {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    margin-top: 7rem;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5rem;
+    gap: 1.2rem;
+    justify-content: center;
+}
+.form-name{
+    display: flex;
+    gap: 1.2rem;
+}
+.contact-form input[type='text']{
+    width: 50%;
+}
+input, textarea{
+    width: 100%;
+    padding: 1rem;
+    background: var(--color-bg);
+color: white;
+font-size: 24px;
+}
+.contact-form .btn{
+    width: max-content;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+/* media queries for tablets */
+
+
+
+
+@media screen and (max-width:1024px){
+    
+    .contact-container{
+        gap: 1.5rem;
+        margin-top: 5rem;
+        padding: 1.5rem;
+        height: fit-content;
+     ;
+
+    }
+    .contact-info{
+        width: auto;
+        padding: 1.5rem;
+    }
+
+    .contact-info p{
+        display: none;
+    }
+}
+
+
+/* media queries for phone */
+
+@media screen and (max-width:600px){
+    .contact-container{
+        grid-template-columns: 1fr;
+        margin-bottom: 3rem;
+        height: fit-content;
+    }
+    .contact-form{
+        margin: 0 1.5rem 3rem;
+    }
+
+    .form-name{
+        flex-direction: column;
+        width: 100%;
+    }
+    .form-name input[type='text']{
+        width: 100%;
+    }
+}

@@ -1,0 +1,8 @@
+->css variables
+->css grid and flexbox
+->LEARN HOW TO USE BEM (Block Element Modifier)
+->CSS units for responsive design (vh, vw, fr, %)
+->form Submission with spam protection (No backend language)
+->css transition & Animations
+->SwiperJS for slides
+->Css media queries to create responsive designs

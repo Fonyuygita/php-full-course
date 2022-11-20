@@ -1,0 +1,92 @@
+.wrapper{
+    display: flex;
+    text-align: center;
+
+
+}
+.wrapper h3{
+    font-size: 60px;
+}
+.wrapper .static-text{
+    color: #ffff;
+    font-size: 60px;
+    margin: auto;
+    
+
+}
+.wrapper .dynamic-text{
+  margin: 0 auto;
+    height: 90px;
+    line-height: 90px;
+     overflow: hidden; 
+}
+.dynamic-text li{
+    color:#fe6d60;
+    list-style: none;
+    font-size: 60px;
+    font-weight: bolder;
+    
+    top: 0;
+position: relative;
+animation:slide 6s steps(4) infinite;
+    
+    
+
+}
+@keyframes slide{
+    100%{
+      top: -360px;
+      
+      
+    }
+}
+.dynamic-text li span{
+    position: relative;
+}
+.dynamic-text li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #4c1e97;
+animation:typing 1.5s steps(10) infinite;
+
+
+}
+@keyframes typing{
+    100%{
+      left: 100%;
+      margin: 0 -35px 0 35px;
+      
+    }
+}
+
+/* NOW THE MOBILE MEDIA  QUERY*/
+@media screen and (max-width:600px){
+body{
+    justify-content: center;
+    align-items: center;
+}
+
+    .dynamic-text li{
+        color:#fe6d60;
+        list-style: none;
+        font-size: 30px;
+        font-weight: bolder;
+        
+        top: 0;
+    position: relative;
+    animation:slide 6s steps(4) infinite;
+        
+        
+    
+    }
+    .wrapper .static-text h3{
+        color: #ffff;
+        font-size: 60px;
+        margin-left: 4rem;
+        
+    
+    }
+}

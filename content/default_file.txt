@@ -1,0 +1,1 @@
+welcome to node jsthis will be created on the screen :  and utf8
